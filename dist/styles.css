@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .card {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 0.5em;
+  overflow: hidden;
+  max-width: 330px;
+  margin: 90px auto;
+}
+@media screen and (min-width: 1200px) {
+  body .card {
+    min-width: 1110px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-basis: auto;
+  }
+}
+body .card .card-img {
+  position: relative;
+}
+body .card .card-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(277, 64%, 61%);
+  mix-blend-mode: multiply;
+}
+body .card .card-info {
+  padding: 2em 1.5em;
+}
+@media screen and (min-width: 1200px) {
+  body .card .card-info {
+    width: 505px;
+    padding: 4em 1.5em 2em 0em;
+  }
+}
+body .card .card-info h2 {
+  padding-bottom: 25px;
+}
+body .card .card-info ul {
+  padding: 1.5em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+}
+@media screen and (min-width: 1200px) {
+  body .card .card-info ul {
+    flex-direction: row;
+    gap: 2em;
+    padding-top: 80px;
+  }
+}
+
+.card {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+}
+.card h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+@media screen and (min-width: 1200px) {
+  .card h2 {
+    text-align: start;
+    font-size: 2.25rem;
+    width: 80%;
+  }
+}
+.card h2 span {
+  color: hsl(277, 64%, 61%);
+}
+.card p {
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+@media screen and (min-width: 1200px) {
+  .card p {
+    text-align: start;
+    max-width: 85%;
+  }
+}
+.card ul {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .card ul {
+    text-align: start;
+  }
+}
+.card ul h3 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+}
+.card ul p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+@media screen and (min-width: 1200px) {
+  .card ul p {
+    width: 9em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

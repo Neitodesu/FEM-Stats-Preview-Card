@@ -1,0 +1,60 @@
+@use '../utils/' as u;
+@use '../abstracts/' as a;
+
+.card {
+	color: u.$main-text;
+	font-family: u.$family01;
+
+	h2 {
+		text-align: center;
+		font-size: 1.7rem;
+		line-height: 1.1;
+
+		@include a.break(1200px) {
+			text-align: start;
+			font-size: 2.25rem;
+			width: 80%;
+		}
+
+		span {
+			color: u.$accent;
+		}
+	}
+
+	p {
+		text-align: center;
+		color: u.$heading-stats;
+		font-size: 1rem;
+		line-height: 1.6;
+
+		@include a.break(1200px) {
+			text-align: start;
+			max-width: 85%;
+		}
+	}
+
+	ul {
+		text-align: center;
+
+		@include a.break(1200px) {
+			text-align: start;
+		}
+
+		h3 {
+			color: u.$main-text;
+			font-family: u.$family01;
+			font-size: 1.5rem;
+		}
+
+		p {
+			color: u.$main-p;
+			font-family: u.$family02;
+			font-size: 0.8rem;
+			letter-spacing: 1px;
+
+			@include a.break(1200px) {
+				width: 9em;
+			}
+		}
+	}
+}
