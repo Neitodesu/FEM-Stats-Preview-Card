@@ -4,7 +4,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Link
 
-[LIVE LINK]()
+[LIVE LINK](https://neitodesu.github.io/FEM-Stats-Preview-Card/)
 
 ### Screenshot
 
